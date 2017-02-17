@@ -1,0 +1,210 @@
+1.
+public class acad {   
+ 
+public static void main(String[] args) {
+ 
+int y=1;
+ 
+int z=9;
+ 
+System.out.println(y+z);  //calculating and printing sum.
+ 
+}
+ 
+}
+  
+2.
+import java.util.*;
+ 
+public class acad {   
+ 
+public static void main(String[] args) {
+ 
+Scanner sc=new Scanner(System.in);
+ 
+int y=sc.nextInt();  //taking input from user
+ 
+int z=sc.nextInt();    //taking input from user
+ 
+System.out.println(y+z);   //printing sum
+ 
+}   
+ 
+}
+ 
+3.
+ 
+import java.util.*;
+ 
+public class acad {
+ 
+static int sum(int y,int z)  //declaring a function
+ 
+{
+ 
+return y+z;           //printing the sum
+
+}
+ 
+public static void main(String[] args) {
+ 
+Scanner sc=new Scanner(System.in);
+ 
+System.out.print("First number is:");
+ 
+int y=sc.nextInt();        //taking 1st input
+ 
+System.out.print("Second number is:");
+ 
+int z=sc.nextInt();         //taking 2st input
+ 
+System.out.println("Sum is:"+sum(y,z));      //calculating and printing sum
+ 
+}   
+ 
+}
+ 
+4.
+ 
+import java.util.*;
+ 
+public class acad {   
+ 
+public static void main(String[] args) {
+ 
+Scanner s=new Scanner(System.in);
+ 
+System.out.print("First number is:");
+ 
+int y=s.nextInt();             //taking 1st input
+ 
+System.out.print("Second number is:");
+ 
+int z=sc.nextInt();              //taking 2nd input
+ 
+for(int i=y+1;i<z;i++)
+ 
+{
+ 
+System.out.println(i);              //printing the output using loop
+ 
+}
+ 
+}   
+ 
+}
+ 
+5.
+ 
+import java.util.*;
+ 
+public class acad {   
+ 
+public static void main(String[] args) {
+ 
+Scanner sc=new Scanner(System.in);
+ 
+int x=sc.nextInt();       //taking input from the user
+ 
+for(int i=1;i<11;i++)      //runnig loop 10 times
+ 
+{
+ 
+System.out.println(x+"x"+i+"="+(x*i));      
+ 
+}
+ 
+}   
+ 
+}
+ 
+6.
+ 
+import java.util.*;
+ 
+public class acad {
+ 
+static int sum(int y,int z)             //function overloading
+ 
+{
+ 
+return y+z;
+ 
+}
+ 
+static int sum(int x,int y,int z)      //function overloading
+ 
+ 
+{
+ 
+return x+y+z;
+ 
+}     
+ 
+public static void main(String[] args) {
+ 
+Scanner sc=new Scanner(System.in);
+ 
+System.out.print("First number is:");
+ 
+int x=sc.nextInt();
+ 
+System.out.print("Second number is:");
+ 
+int y=sc.nextInt();
+ 
+System.out.print("Third number is:");
+ 
+int z=sc.nextInt();
+ 
+System.out.println("Sum is:"+sum(x,y,z));   
+ 
+}   
+ 
+}
+ 
+7. Yes a method with same return type can be overloaded by changing the number of arguments
+ex-   int sum(int a,int b)
+      int sum(int a,int b,it c)
+ 
+8.
+ import java.util.*;
+ 
+public class acad {         
+ 
+public static void main(String[] args) {
+ 
+Scanner sc=new Scanner(System.in);
+ 
+int n=sc.nextInt();        //taking input from the user
+ 
+int[] y=new int[n];        //declaring int array
+ 
+int[] z=new int[n];      //declaring int array
+ 
+for(int i=0;i<n;i++)           
+ 
+{
+ 
+y[i]=sc.nextInt();            //filling values in the array
+ 
+}
+ 
+Arrays.sort(y);                //sorting the array
+ 
+for(int i=0;i<n;i++)
+{ 
+ 
+z[i]=y[n-i-1];
+ 
+}
+ 
+for(int i=0;i<n;i++)          //running loop n-1 times.
+ 
+{
+ 
+System.out.println(z[i]);  //printing values.
+ 
+}
+ 
+}
